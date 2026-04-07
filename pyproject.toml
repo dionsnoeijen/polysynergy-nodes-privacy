@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "polysynergy_nodes_privacy"
+version = "0.1.0"
+description = "Privacy detection and blur nodes for PolySynergy using YOLOv8"
+authors = ["Dion Snoeijen"]
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+polysynergy_node_runner = { path = "../node_runner", develop = true }
+polysynergy_nodes = { path = "../nodes", develop = true }
+ultralytics = ">=8.3.0"
+supervision = ">=0.25.0"
+pillow = "^11.0.0"
+requests = "^2.32.0"
+numpy = "^2.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
